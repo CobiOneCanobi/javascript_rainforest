@@ -1,0 +1,7 @@
+  <div class="product">
+    <p><%= link_to product.name, product_path(product.id) %></p>
+    <p><%= word_wrap(product.description.first(50), line_width: 20) %></p>
+    <p><%= product.formatted_price %></p>
+    <p><%= image_tag(product.image, height: '100', width: '100') %></p>
+    </br></br>
+  </div>
